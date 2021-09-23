@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function validarSenha(name1, name2){
+    var senha1 = document.getElementById(name1).value;
+    var senha2 = document.getElementById(name2).value;
+		
+    if (senha1 != "" && senha2 != "" && senha1 === senha2)
+    {
+    	alert('senha iguais');
+    }
+    else
+    {
+      	alert('senhas diferentes');
+    }
+}
+    </script>
+    <head>
+        <meta charset="UTF-8">
+        
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required size="10" maxlength="10" />
+            </div>
+            
+            <div>
+            <label for="senha">Repetir Senha:</label>
+            <input type="password" name="senha1" id="senha1" required size="10" maxlength="10" />
+            </div>
+            <div>
+            <button id="btnVerify" onclick="validarSenha('senha','senha1')">Verificar</button>
+            
+    </head>
+</html>
